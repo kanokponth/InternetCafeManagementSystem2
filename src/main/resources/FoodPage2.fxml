@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="546.0" style="-fx-background-color: #ffe7ba;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.FoodPage2Controller">
+   <children>
+      <TextArea fx:id="orderTextArea" layoutX="57.0" layoutY="118.0" prefHeight="298.0" prefWidth="424.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="395.0" layoutY="471.0" mnemonicParsing="false" onAction="#confirmFood" prefHeight="45.0" prefWidth="85.0" style="-fx-background-color: #90ee90;" text="ตกลง">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="57.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleBackButtonOnClick" prefHeight="46.0" prefWidth="86.0" style="-fx-background-color: #ff6a6a;" text="กลับ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="47.0" layoutY="72.0" prefHeight="27.0" prefWidth="48.0" text="ผู้ใช้ :" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="userLabel" alignment="CENTER" layoutX="92.0" layoutY="72.0" prefHeight="27.0" prefWidth="150.0" text="...................." textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="balanceLabel" alignment="CENTER" layoutX="375.0" layoutY="73.0" prefHeight="26.0" prefWidth="100.0" text="........................." textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="73.0" prefHeight="27.0" prefWidth="132.0" text="ยอดเงินคงเหลือ :" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="73.0" prefHeight="27.0" prefWidth="37.0" text="บาท" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="14.0" prefHeight="46.0" prefWidth="158.0" text="รายการที่สั่ง" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPriceLabel" alignment="CENTER" layoutX="153.0" layoutY="431.0" prefHeight="27.0" prefWidth="258.0" text="0" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="427.0" prefHeight="36.0" prefWidth="92.0" text="ราคารวม" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="427.0" prefHeight="36.0" prefWidth="48.0" text="บาท" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

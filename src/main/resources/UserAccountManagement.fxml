@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="420.0" style="-fx-background-color: #ffe7ba;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.UserAccountManagementController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="21.0" prefHeight="74.0" prefWidth="420.0" text=" User Account Management" textFill="#6b5942">
+         <font>
+            <Font name="Elephant" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="106.0" prefHeight="38.0" prefWidth="94.0" text="ชื่อผู้ใช้ :" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="79.0" layoutY="147.0" prefHeight="38.0" prefWidth="102.0" text="เงินคงเหลือ :" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="balanceLabel" layoutX="193.0" layoutY="153.0" prefHeight="18.0" prefWidth="138.0" text=".......">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="61.0" layoutY="246.0" prefHeight="48.0" prefWidth="112.0" text="รหัสผ่านเดิม" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="61.0" layoutY="294.0" prefHeight="73.0" prefWidth="126.0" text="รหัสผ่านใหม่" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="359.0" prefHeight="66.0" prefWidth="152.0" text="ยืนยันรหัสผ่านใหม่" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <PasswordField fx:id="newPasswordTextfield" layoutX="171.0" layoutY="318.0" promptText="กรอกรหัสผ่านใหม่" />
+      <PasswordField fx:id="newPasswordConfirmationTextfield" layoutX="171.0" layoutY="379.0" promptText="ยืนยันรหัสผ่านใหม่" />
+      <PasswordField fx:id="oldPasswordTextfield" layoutX="171.0" layoutY="257.0" promptText="กรอกรหัสผ่านเดิม" />
+      <Button layoutX="169.0" layoutY="459.0" mnemonicParsing="false" onAction="#handleBtnOkOnClick" prefHeight="48.0" prefWidth="83.0" style="-fx-background-color: #90ee90;" text="ยืนยัน">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label fx:id="newPasswordLabel" layoutX="170.0" layoutY="294.0" prefHeight="20.0" prefWidth="218.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="confirmPassLabel" alignment="CENTER" layoutX="173.0" layoutY="357.0" prefHeight="22.0" prefWidth="218.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="usernameLabel" layoutX="192.0" layoutY="112.0" prefHeight="21.0" prefWidth="152.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="oldPasswordLabel" alignment="CENTER" layoutX="171.0" layoutY="236.0" prefHeight="22.0" prefWidth="218.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="completeLabel" alignment="CENTER" layoutX="102.0" layoutY="415.0" prefHeight="21.0" prefWidth="218.0" textFill="#009800" />
+      <Label fx:id="nullLabel" alignment="CENTER" layoutX="128.0" layoutY="415.0" prefHeight="21.0" prefWidth="165.0" textFill="RED" />
+      <Label fx:id="passError" alignment="CENTER" layoutX="87.0" layoutY="415.0" prefHeight="21.0" prefWidth="247.0" textFill="RED" />
+   </children>
+</AnchorPane>

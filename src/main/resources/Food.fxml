@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #ffe7ba;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.FoodController">
+   <children>
+      <Label alignment="CENTER" layoutX="382.0" layoutY="14.0" prefHeight="50.0" prefWidth="122.0" text="สั่งอาหาร" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="200.0" layoutY="119.0" prefHeight="23.0" prefWidth="53.0" text="Food" textFill="#6b5942">
+         <font>
+            <Font name="Elephant" size="18.0" />
+         </font></Label>
+      <Label layoutX="643.0" layoutY="119.0" prefHeight="23.0" prefWidth="60.0" text="Drink" textFill="#6b5942">
+         <font>
+            <Font name="Elephant" size="18.0" />
+         </font></Label>
+      <ScrollPane layoutX="13.0" layoutY="149.0" prefHeight="291.0" prefWidth="427.0">
+         <content>
+            <Pane prefHeight="849.0" prefWidth="411.0" style="-fx-background-color: #CC9900;">
+               <children>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ดาวน์โหลด.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="layTextField" alignment="CENTER" layoutX="57.0" layoutY="187.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="62.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleIncreaseLayAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="98.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleDecreaseLayAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="243.0" prefHeight="26.0" prefWidth="156.0" text="Lay" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="267.0" prefHeight="26.0" prefWidth="156.0" text="10 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="14.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@51014996.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="paprikaTextField" alignment="CENTER" layoutX="56.0" layoutY="462.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="61.0" layoutY="493.0" mnemonicParsing="false" onAction="#handleIncreasePaprikaAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="97.0" layoutY="493.0" mnemonicParsing="false" onAction="#handleDecreasePaprikaAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="516.0" prefHeight="26.0" prefWidth="156.0" text="Paprika" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="18.0" layoutY="540.0" prefHeight="26.0" prefWidth="156.0" text="5 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="12.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@51014999.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="cornaeTextField" alignment="CENTER" layoutX="55.0" layoutY="734.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="60.0" layoutY="766.0" mnemonicParsing="false" onAction="#handleIncreaseCornaeAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="96.0" layoutY="766.0" mnemonicParsing="false" onAction="#handleDecreaseCornaeAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="18.0" layoutY="791.0" prefHeight="26.0" prefWidth="156.0" text="Cornae" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="17.0" layoutY="815.0" prefHeight="26.0" prefWidth="156.0" text="30 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="227.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@3264-20180503103046-37669802824836899.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="testoTextField" alignment="CENTER" layoutX="271.0" layoutY="187.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="276.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleIncreaseTestoAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="312.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleDecreaseTestoAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="234.0" layoutY="243.0" prefHeight="26.0" prefWidth="156.0" text="Testo" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="235.0" layoutY="267.0" prefHeight="26.0" prefWidth="156.0" text="15 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="227.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ShotType1_328x328.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="potaeTextField" alignment="CENTER" layoutX="271.0" layoutY="462.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="276.0" layoutY="493.0" mnemonicParsing="false" onAction="#handleIncreasePotaeAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="312.0" layoutY="493.0" mnemonicParsing="false" onAction="#handleDecreasePotaeAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="235.0" layoutY="516.0" prefHeight="26.0" prefWidth="156.0" text="Potae" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="234.0" layoutY="541.0" prefHeight="26.0" prefWidth="156.0" text="20 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="228.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@71aPkM0zvlL._SY355_.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="pringlesTextField" alignment="CENTER" layoutX="272.0" layoutY="735.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="276.0" layoutY="766.0" mnemonicParsing="false" onAction="#handleIncreasePringlesAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="312.0" layoutY="766.0" mnemonicParsing="false" onAction="#handleDecreasePringlesAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="235.0" layoutY="791.0" prefHeight="26.0" prefWidth="156.0" text="Pringles" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="234.0" layoutY="815.0" prefHeight="26.0" prefWidth="156.0" text="30 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="459.0" layoutY="149.0" prefHeight="291.0" prefWidth="427.0">
+         <content>
+            <Pane prefHeight="849.0" prefWidth="411.0" style="-fx-background-color: #CC9900;">
+               <children>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="16.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ny3p8buuo1HAnMfmesx-o.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="waterTextField" alignment="CENTER" layoutX="59.0" layoutY="188.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="64.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleIncreaseWaterAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="100.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleDecreaseWaterAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="23.0" layoutY="245.0" prefHeight="26.0" prefWidth="156.0" text="Water" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="22.0" layoutY="269.0" prefHeight="26.0" prefWidth="156.0" text="8 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="43.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@16oz-cola1.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="estTextField" alignment="CENTER" layoutX="59.0" layoutY="467.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="64.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleIncreaseEstAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="99.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleDecreaseEstAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="22.0" layoutY="522.0" prefHeight="26.0" prefWidth="156.0" text="Est" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="21.0" layoutY="546.0" prefHeight="26.0" prefWidth="156.0" text="10 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="16.0" layoutY="572.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Coca_Cola_Slim_Can_copy.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="cokeTextField" alignment="CENTER" layoutX="58.0" layoutY="747.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="63.0" layoutY="779.0" mnemonicParsing="false" onAction="#handleIncreaseCokeAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="99.0" layoutY="779.0" mnemonicParsing="false" onAction="#handleDecreaseCokeAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="21.0" layoutY="801.0" prefHeight="26.0" prefWidth="156.0" text="Coke" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="825.0" prefHeight="26.0" prefWidth="156.0" text="15 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="228.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ดาวน์โหลด%20(1).jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="ichitanTextField" alignment="CENTER" layoutX="271.0" layoutY="188.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="277.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleIncreaseIchitanAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="313.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleDecreaseIchitanAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="236.0" layoutY="245.0" prefHeight="26.0" prefWidth="156.0" text="Ichitan" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="235.0" layoutY="269.0" prefHeight="26.0" prefWidth="156.0" text="20 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="228.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@สไปรท์กระป๋อง-325-มล..jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="spriteTextField" alignment="CENTER" layoutX="273.0" layoutY="467.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="277.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleIncreaseSpriteAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="313.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleDecreaseSpriteAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="236.0" layoutY="522.0" prefHeight="26.0" prefWidth="156.0" text="Sprite" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="235.0" layoutY="546.0" prefHeight="26.0" prefWidth="156.0" text="15 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="229.0" layoutY="572.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ดาวน์โหลด.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="cokeZeroTextField" alignment="CENTER" layoutX="272.0" layoutY="747.0" prefHeight="25.0" prefWidth="82.0" />
+                  <Button layoutX="277.0" layoutY="779.0" mnemonicParsing="false" onAction="#handleIncreaseCokeZeroAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="313.0" layoutY="779.0" mnemonicParsing="false" onAction="#handleDecreaseCokeZeroAmountButtonOnClick" prefHeight="25.0" prefWidth="36.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="235.0" layoutY="801.0" prefHeight="26.0" prefWidth="156.0" text="CokeZero" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="235.0" layoutY="823.0" prefHeight="26.0" prefWidth="156.0" text="20 บาท" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="139.0" layoutY="71.0" prefHeight="39.0" prefWidth="53.0" text="ผู้ใช้ :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="71.0" prefHeight="39.0" prefWidth="139.0" text="ยอดเงินคงเหลือ :" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLabel" alignment="CENTER" layoutX="184.0" layoutY="71.0" prefHeight="39.0" prefWidth="178.0" text="....................................." textFill="BLUE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="balanceLabel" alignment="CENTER" layoutX="549.0" layoutY="71.0" prefHeight="39.0" prefWidth="157.0" text="....................................." textFill="BLUE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="707.0" layoutY="71.0" prefHeight="39.0" prefWidth="53.0" text="บาท" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="515.0" prefHeight="39.0" prefWidth="139.0" text="จำนวนเงินทั้งหมด" textFill="#6b5942">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPriceLabel" alignment="CENTER" layoutX="398.0" layoutY="515.0" prefHeight="39.0" prefWidth="150.0" text="0" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="574.0" layoutY="516.0" prefHeight="39.0" prefWidth="34.0" text="บาท">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="397.0" layoutY="570.0" mnemonicParsing="false" onAction="#handleConfirmButtonOnClick" prefHeight="39.0" prefWidth="103.0" style="-fx-background-color: #90ee90;" text="ยืนยัน">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="warningLabel" alignment="CENTER" layoutX="266.0" layoutY="468.0" prefHeight="26.0" prefWidth="366.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
